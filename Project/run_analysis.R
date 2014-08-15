@@ -16,3 +16,6 @@ dfActivityNames <- read.table("activity_labels.txt")
 dfAllActivities$activityName <- factor(dfAllActivities$V1, levels = labels$V1, labels = labels$V2)
 dfAllReq <- cbind(dfAllReq, dfAllActivities$activityName )
 names(dfAllReq)[names(dfAllReq) == "dfAllActivities$activityName"] <- "Activity"
+
+#4. Set descriptive variable names
+names(dfAllReq)[1:(ncol(dfAllReq)-1)] = as.character(dfFeatures$V2[iFeatures])
