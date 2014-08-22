@@ -1,6 +1,6 @@
-#####SOURCE DATA SET DESCRIPTION
+##### SOURCE DATA SET DESCRIPTION
 
-Source data set contains 7352+2947=10299 observations of 561 features for 30 subjects performing 6 types of activities
+A full description is available at the site [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones ) where the data was obtained. The utilized source data set contains 7352+2947=10299 observations of 561 features for 30 subjects performing 6 types of activities
 and consists of 8 space-delmited files:
 - train/X_train.txt : train set measurments, 7352 rows x 561 columns
 - test/X_test.txt : test set measurments, 2947 rows x  561 columns
@@ -10,9 +10,10 @@ and consists of 8 space-delmited files:
 - test/subject_test.txt : test set subject ids, 2947 rows x 1 column, rows correspond to test/X_test.txt rows, subject Id = [1:30]
 - features.txt: features(measurments) ids and names, 561 rows x 2 columns, rows correspond to X_train and X_test columns
 activity_labels.txt : activity ids and names, 6 rows x 2 columns, first column values equal to y_train and y_test column values
-           
-         
-#####DATA TRANSFORMATION DESCRIPTION
+        
+     
+##### DATA TRANSFORMATION DESCRIPTION    
+Ambiguities in the requirements (e.g. what should be considered mean and standard deviation for each measure) were resolved by choosing the simplest for implementation option.
 
 1.MERGE TRAINING AND TEST SETS TO CREATE ONE DATA SET
 - Get observations:  read X_train.txt and X_test.txt. 
@@ -39,7 +40,7 @@ activity_labels.txt : activity ids and names, 6 rows x 2 columns, first column v
 - Save final data.frame as space delimited file in workspace subdirectory.
         
        
-#####FINAL TIDY DATA SET DESCRIPTION
+##### FINAL TIDY DATA SET DESCRIPTION
 
 Final tidy data set contains 6 x 30 = 180 agregated by activites(6) and subjects(30)observations
 of 79 features (reduced by including ones with name containg "mean" or "std")
