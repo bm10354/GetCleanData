@@ -7,15 +7,12 @@ to complete Project for __Getting and Cleaning Data__ Coursera class.
 - __run_analysis.R__ is the R implementation of data transformations.
 
 #### Reproduction steps
-1.Source data preparation 
-Download and unzip file from [here]
+1.Download and unzip file from [here]
 (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
 The result is the local disk (sub)directory named UCI HAR Dataset, containing the source data files and subdirectories
-Thise can be done with any tools of choice, not necessary within R.
+This can be done with any tools of choice, not necessary within R.
 
-2.R program preparation
-Download run_analysis.R from this repository so it is available for R (R Studio).
+2.Download run_analysis.R from this repository so it is available for R.
 It is not necessary to put it in UCI HAR Dataset.
 
-3.R program execution
-Set working R (R Studio) working directory to UCI HAR Dataset and execute run_analysis.R
+3.Set R working R working directory to UCI HAR Dataset and execute run_analysis.R
